@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@mipmap/fondo">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="420dp"
+        android:layout_height="89dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/cabecera" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="334dp"
+        android:layout_height="31dp"
+        app:srcCompat="@drawable/parte2" />
+
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Escribe el Primer Dígito"
+        android:inputType="number"
+        android:textColor="#FDFDFD"
+        android:textColorHint="#FDFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Escribe el Segundo Dígito"
+        android:inputType="number"
+        android:textColor="#FDFDFD"
+        android:textColorHint="#FDFDFD"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="375dp"
+        android:layout_height="29dp"
+        app:srcCompat="@drawable/parte3" />
+
+    <Button
+        android:id="@+id/button_suma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suma"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button_resta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resta"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button_division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="división"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button_multiplicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicación"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="432dp"
+        android:layout_height="54dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/resultado" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textColorHighlight="#FDFDFD"
+        android:textColorHint="#FDFDFD"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+</LinearLayout>
